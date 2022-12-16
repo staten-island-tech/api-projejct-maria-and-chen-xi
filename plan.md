@@ -1,9 +1,9 @@
 go into api, get data
 
-data consists of vtuber...:
-name
-img of them :)
-<!-- corporation  --> (opt, only if more than one corp) vtuberssfhxdg.xcom/hololive is search page !! homepage links to corps, and master page of all
+data consists of vtuber:
+- name
+- img of them :)
+<-- corporation  (opt, only if more than one corp) --> vtuberssfhxdg.xcom/hololive is search page !! homepage links to corps, and master page of all
 sub count
 branch
 FOR CARD ^^
