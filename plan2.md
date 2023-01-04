@@ -1,5 +1,5 @@
-go into api, get data
+home[page = search bar] 
 
-data consists of facts
-- what kind
-- img relating to fact
+pages for each information(anime)
+-has ranking
+-popularity
