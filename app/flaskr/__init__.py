@@ -12,5 +12,9 @@ def home():
 @app.route('/<int:name>')
 def anime(name):
     variable = requests.get(f"https://api.jikan.moe/v4/anime/{name}/full")
+    # print(str(variable.status_code()))
+    # # if variable.status_code() != 200:
+    # #     return render_template('error.html')
+    # # else:
     return render_template('animePage.html', variable=variable)
 
