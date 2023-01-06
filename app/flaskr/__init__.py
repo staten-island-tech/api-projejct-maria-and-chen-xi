@@ -8,27 +8,23 @@ app = Flask(__name__)
  
 @app.route('/')
 def home():
-    count = 0 
-    while count != 30:
-        time.sleep(0.34)
-        anime = requests.get(f'https://api.jikan.moe/v4/anime/{count}/full')
-        print(anime)
-        print(anime.json())
-        if '200' in str(anime):
-            print(anime.json()['data']['title'])
-            if anime_name in anime.json()['data']['title']:
-                return render_template('index.html', anime=anime)
-            # if anime_name in anime.json()['data']['title_japanese']:
-            #     return render_template('index.html', anime=anime)
-        count = count + 1
+    return render_template('index.html')
 
-    return render_template('error.html')
-        
-    full = requests.get('http://api.jikan.moe/v4/anime')
-    return render_template('index.html', full=full)
-
-@app.route('/<int:name>')
-def anime(name):
-    anime = requests.get(f"https://api.jikan.moe/v4/anime/{name}/full")
-    return render_template('animePage.html', anime=anime)
+@app.route('/<int:name>/')
+def search(name):
+    # final_name = name.replace("%20", " ")
+    # print(final_name)
+    # anime = requests.get(f"https://api.jikan.moe/v4/anime/{final_name}/full")
+    # if '200' in str(anime):
+    #     return render_template('animePage.html', anime=anime)
+    # else:
+    #     return render_template('error.html')
+    print(name)
+    final_name = name.replace("%20", " ")
+    print(final_name)
+    return(render_template('one piece.html', name=final_name))
+    # if final_name == "One Piece":
+    #     return render_template("one piece.html")
+    # else:
+    #     return render_template('error.html')
 
