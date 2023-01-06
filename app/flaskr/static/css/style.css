@@ -10,7 +10,13 @@ html, body, *{
     background-color: #766aac
 } */
 .background{
-    background-color: #766aac;
+    background-color: #3b4267;
     height: 100%;
-    color: #fff59c;
+    color: #333340;
 }
+#triangle-topleft {
+    width: 0;
+    height: 0;
+    border-top: 100px solid #C0C0CC;
+    border-right: 100px solid transparent;
+  }
