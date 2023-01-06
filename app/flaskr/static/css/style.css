@@ -11,9 +11,11 @@ html, body, *{
     height: 100%;
     color: #333340;
 }
-#triangle-topleft {
-    width: 0;
-    height: 0;
-    border-top: 100px solid #C0C0CC;
-    border-right: 100px solid transparent;
+#triangle-topleft{
+    clip-path: polygon(0 0, 0 200%, 50% 0);
+    background-color: #C0C0CC;
   }
+  h2{
+    background-color: #C0C0CC;
+  }
+
