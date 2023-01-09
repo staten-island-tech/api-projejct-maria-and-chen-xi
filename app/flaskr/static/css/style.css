@@ -15,7 +15,20 @@ html, body, *{
     clip-path: polygon(0 0, 0 200%, 50% 0);
     background-color: #C0C0CC;
   }
-  h2{
+  h2 {
     background-color: #C0C0CC;
+  }
+  .header{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .image {
+    border: 20px;
+    margin:20px;
+  }
+  .mb-3 {
+    color: white;
   }
 

@@ -3,13 +3,14 @@
 {% endfor %} -->
 <link rel="stylesheet" href="../static/css/style.css">
 <head>
-
-<div class="header">
+<div class="blue-back">
   <div class = "body">
+  <div class="p-5 text-center bg-dark">
+  </head>
+<div class="header">
     <h1>AniMAL</h1>
-  </div>
 </div>
 <div id = "triangle-topleft">
     <h2>{{variable.json()['data']['title_japanese']}}</h2> 
-    <img src="{{variable.json()['data']['images']['jpg']['image_url']}}"> <!-- image for anime --></div>
+    <img class = "image" src="{{variable.json()['data']['images']['jpg']['image_url']}}"> <!-- image for anime --></div>
 </div>
