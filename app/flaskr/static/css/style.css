@@ -24,4 +24,11 @@ html, body, *{
     align-items: center;
     justify-content: space-between;
   }
+  .image {
+    border: 20px;
+    margin:20px;
+  }
+  .mb-3 {
+    color: white;
+  }
 
