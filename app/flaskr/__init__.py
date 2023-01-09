@@ -9,7 +9,7 @@ app = Flask(__name__)
 def home():
     return render_template('index.html')
 
-@app.route('/<int:name>')
+@app.route('/<name>')
 def anime(name):
     variable = requests.get(f"https://api.jikan.moe/v4/anime/{name}/full")
     # print(str(variable.status_code()))
