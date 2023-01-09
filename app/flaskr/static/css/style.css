@@ -15,10 +15,13 @@ html, body, *{
     clip-path: polygon(0 0, 0 200%, 50% 0);
     background-color: #C0C0CC;
   }
-  h2{
+  h2 {
     background-color: #C0C0CC;
   }
-  .headercolor{
-    color: #b8669b
+  .header{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
