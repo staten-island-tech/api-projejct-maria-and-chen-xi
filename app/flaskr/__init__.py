@@ -25,8 +25,8 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    random = requests.get('https://api.jikan.moe/v4/top/anime')
-    return render_template('index.html', top=random)
+    top = requests.get('https://api.jikan.moe/v4/top/anime')
+    return render_template('index.html', top=top)
 
 @app.route('/<name>/')
 def animepage(name):
