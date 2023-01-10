@@ -3,11 +3,14 @@ html, body, *{
     margin: 2;
     padding: 0;
     font-family: 'Bungee', cursive;
-    background-color:  #3b4267;
-
-} 
+    background-color: #766aac
+}
+/* body{
+    font-family: 'Bungee', cursive;
+    background-color: #766aac
+} */
 .background{
-    background-color: #3b4267;
+    background-color: #766aac;
     height: 100%;
     color: #333340;
 }
