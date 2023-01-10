@@ -15,14 +15,18 @@ html, body, *{
     clip-path: polygon(0 0, 0 200%, 50% 0);
     background-color: #C0C0CC;
   }
-  h2 {
+  h2, h1, *{
     background-color: #C0C0CC;
   }
+
+
   .header{
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: #C0C0CC;
+    color: black
   }
   .image {
     border: 20px;
@@ -30,5 +34,8 @@ html, body, *{
   }
   .mb-3 {
     color: white;
+  }
+  p.ex1 { 
+    font-size: 80px;
   }
 

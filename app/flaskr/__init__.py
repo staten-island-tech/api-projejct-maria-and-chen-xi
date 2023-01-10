@@ -41,7 +41,7 @@ def animepage(name):
     # final_name = name.replace("%20", "+")
 
     # print(final_name)
-    return(render_template('animePage.html', anime=anime))
+    return(render_template('animePage.html', variable=anime))
     # if final_name == "One Piece":
     #     return render_template("one piece.html")
     # else:
