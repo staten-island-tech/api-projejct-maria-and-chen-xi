@@ -45,3 +45,18 @@ html, body, *{
     margin: 0;
     padding: 0;
   }
+  .imagelogo {
+    clip-path: circle(45.1% at 50% 50%);
+    height: 21%;
+    width:25%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .font-size{
+    font-size:30px;
+  }
+
+  
