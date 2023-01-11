@@ -7,3 +7,4 @@
 #333340
 #CCC0C0
 #C0C0CC
+obj fit cutter
