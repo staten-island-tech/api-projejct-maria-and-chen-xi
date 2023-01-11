@@ -8,12 +8,22 @@
       <img class = "image" src="{{variable.json()['data']['images']['jpg']['image_url']}}"> <!-- image for anime --></div>
  
     <h2> Popularity:{{variable.json()['data']['popularity']}}; 
-        Score: {{variable.json()['data']['score']}};   
-        Rank: {{variable.json()['data']['rank']}};   
-        Status: {{variable.json()['data']['status']}};   
-        Airing: {{variable.json()['data']['airing']}};   
+        <br>
+        Score: {{variable.json()['data']['score']}};  
+        <br> 
+        Rank: {{variable.json()['data']['rank']}}; 
+        <br>  
+        Status: {{variable.json()['data']['status']}};
+        <br>   
+        Airing: {{variable.json()['data']['airing']}}; 
+        <br>  
         Season: {{variable.json()['data']['season']}};   
-        Year: {{variable.json()['data']['year']}};  
+        Year: {{variable.json()['data']['year']}}; 
+        <br>
+        Genres: 
+        {% for thing in variable.json()['data']['genres']%}
+        {{thing['name']}},
+        {% endfor %}  
     </h2>
      <p>Summary: {{variable.json()['data']['synopsis']}}</p>
     </div>
