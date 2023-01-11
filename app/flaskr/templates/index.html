@@ -10,13 +10,15 @@
     </form>
 
       <h1>Top Anime: Hall of fame</h1>
-    {% for thing in top.json()['data']%}
-      <p><A href='/{{thing["mal_id"]}}'>{{thing['title_english']}}</A></p> 
-      <img src="{{thing['images']['jpg']['image_url']}}">
-      
-    {% endfor %}
-  
-    </div>
+      <div class="flex-container">
+        
+        {% for thing in top.json()['data']%}
+        <div class ="card"></div>
+        <p><A href='/{{thing["mal_id"]}}'>{{thing['title_english']}}</A></p> 
+         <img src="{{thing['images']['jpg']['image_url']}}">  
+        {% endfor %}   
+        </div>
+      </div>
   {% endblock %}
       
   
