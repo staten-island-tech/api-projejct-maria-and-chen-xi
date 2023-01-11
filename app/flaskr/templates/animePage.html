@@ -1,8 +1,33 @@
-<!-- {% for thing in anime.json()['data'] %}
-<h2>{{thing}}</h2>
-{% endfor %} -->
 
-<h2>{{anime.json()['data']['title_japanese']}}</h2> <!-- name of anime -->
-<img src="{{anime.json()['data']['images']['jpg']['image_url']}}"> <!-- image for anime -->
+{% extends 'base.html' %}
+{% block content %}
+   
+   
+    <div id = "triangle-topleft">
+     <h2>{{variable.json()['data']['title_japanese']}}</h2> 
+      <img class = "image" src="{{variable.json()['data']['images']['jpg']['image_url']}}"> <!-- image for anime --></div>
+ 
+    <h2> Popularity:{{variable.json()['data']['popularity']}}; 
+        <br>
+        Score: {{variable.json()['data']['score']}};  
+        <br> 
+        Rank: {{variable.json()['data']['rank']}}; 
+        <br>  
+        Status: {{variable.json()['data']['status']}};
+        <br>   
+        Airing: {{variable.json()['data']['airing']}}; 
+        <br>  
+        Season: {{variable.json()['data']['season']}};   
+        Year: {{variable.json()['data']['year']}}; 
+        <br>
+        Genres: 
+        {% for thing in variable.json()['data']['genres']%}
+        {{thing['name']}},
+        {% endfor %}  
+    </h2>
+     <p>Summary: {{variable.json()['data']['synopsis']}}</p>
+    </div>
 
-<!-- <h2>{{anime.json()['data']}}</h2> -->
+</div>
+{% endblock %}
+<!-- <h2>{{variable.json()['data']}}</h2> -->

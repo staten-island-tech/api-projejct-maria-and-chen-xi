@@ -1,17 +1,34 @@
-<h1>asdRFArFDAFAF TEST</h1>
-<img src="../static/img/waah.jpeg" height="80%" width="90%">
-<br>
-<br>
-<form id="form"> 
-    <input type="search" id="query" name="q" placeholder="Search...">
-    <button>Search</button>
-  </form>
-{% for thing in top.json()['data']%}
-  <!-- {% for element in thing %}
-  <h3>{{element}}</h3>
-  {% endfor %} -->
-  <h2><A href='/{{thing["mal_id"]}}'>{{thing['title_english']}}</A></h2> 
-  <img src="{{thing['images']['jpg']['image_url']}}">
-  <h2></h2>
-{% endfor %}
+
+{% extends 'base.html' %}
+{% block content %}
+   
+          
+    
+     <form id="form"> 
+        <input type="search" id="query" name="q" placeholder="Search...">
+       <button>Search</button>
+    </form>
+
+      <h1>Top Anime: Hall of fame</h1>
+      <div class="flex-container">
+        
+        {% for thing in top.json()['data']%}
+        <div class ="card"></div>
+        <p><A href='/{{thing["mal_id"]}}'>{{thing['title_english']}}</A></p> 
+         <img src="{{thing['images']['jpg']['image_url']}}">  
+        {% endfor %}   
+        </div>
+      </div>
+  {% endblock %}
+      
+  
+     
+   
+  
+  
+
+
+  
+</div>
+
 
