@@ -7,10 +7,15 @@
      <h2>{{variable.json()['data']['title_japanese']}}</h2> 
       <img class = "image" src="{{variable.json()['data']['images']['jpg']['image_url']}}"> <!-- image for anime --></div>
  
-    <p>Popularity:{{variable.json()['data']['popularity']}}
-      Score:{{variable.json()['data']['score']}}
-    </p>
-    <p>{{variable.json()['data']['synopsis']}}</p>
+    <h2> Popularity:{{variable.json()['data']['popularity']}}; 
+        Score: {{variable.json()['data']['score']}};   
+        Rank: {{variable.json()['data']['rank']}};   
+        Status: {{variable.json()['data']['status']}};   
+        Airing: {{variable.json()['data']['airing']}};   
+        Season: {{variable.json()['data']['season']}};   
+        Year: {{variable.json()['data']['year']}};  
+    </h2>
+     <p>Summary: {{variable.json()['data']['synopsis']}}</p>
     </div>
 
 </div>
