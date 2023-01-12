@@ -7,9 +7,7 @@ html, body, *{
 
 } 
 .background{
-    background-color: #3b4267;
-    height: 100%;
-    color: #333340;
+  background-color:  #3b4267;
 }
 
 /* Navbar container */
@@ -124,7 +122,6 @@ html, body, *{
  .menu-content {
     display: none;
     position: absolute;
-    background-color: #017575;
     min-width: 160px;
     z-index: 1;
  }
@@ -143,6 +140,7 @@ html, body, *{
   display: inline-block;
 }
 .links-hidden:hover,.links:hover {
+  display: inline;
   background-color: purple;
 }
 .dropdown-menu:hover .menu-content {

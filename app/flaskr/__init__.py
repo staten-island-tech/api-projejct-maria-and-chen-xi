@@ -26,8 +26,12 @@ app = Flask(__name__)
 @app.route('/')
 def home():
     top = requests.get('https://api.jikan.moe/v4/top/anime')
-    return render_template('index.html', top=top)
+    genres = requests.get('https://api.jikan.moe/v4/genres/anime')
+    return render_template('index.html', top=top, genres=genres)
 
+@app.route('/twst')
+def test():
+    return render_template('test.html')
 @app.route('/<name>/')
 def animepage(name):
     # final_name = name.replace("%20", " ")

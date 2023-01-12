@@ -9,6 +9,12 @@
        <button>Search</button>
     </form>
 
+    <h2> Genres: 
+      {% for genre in genres.json()['data'] %}
+      {{genre['name']}},
+      {% endfor %}
+    </h2>
+
       <h1>Top Anime: Hall of fame</h1>
       <div class="flex-container">
         
