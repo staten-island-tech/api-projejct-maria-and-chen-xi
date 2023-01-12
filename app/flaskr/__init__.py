@@ -26,24 +26,16 @@ app = Flask(__name__)
 @app.route('/')
 def home():
     top = requests.get('https://api.jikan.moe/v4/top/anime')
-    return render_template('index.html', top=top)
+    genres = requests.get('https://api.jikan.moe/v4/genres/anime')
+    return render_template('index.html', top=top, genres=genres)
 
 @app.route('/<name>/')
 def animepage(name):
-    # final_name = name.replace("%20", " ")
-    # print(final_name)
-    anime = requests.get(f"https://api.jikan.moe/v4/anime/{name}/full")
-    # if '200' in str(anime):
-    #     return render_template('animePage.html', anime=anime)
-    # else:
-    #     return render_template('error.html')
-    # print(name)
-    # final_name = name.replace("%20", "+")
-
-    # print(final_name)
-    return(render_template('animePage.html', variable=anime))
-    # if final_name == "One Piece":
-    #     return render_template("one piece.html")
-    # else:
-    #     return render_template('error.html')
-
+    final_name = name.replace("%20", "+")
+    anime = requests.get(f'https://api.jikan.moe/v4/anime?q={final_name}&sfw')
+    print(anime.json())
+    try: 
+        if anime.json()['status'] == 404:
+            return render_template('error.html', status=anime.json()['status'], message=anime.json()['message'])
+    except KeyError:
+        return(render_template('animePage.html', anime=anime))
