@@ -19,9 +19,9 @@ def search(search):
         return(render_template('noResults.html'))
     return(render_template('searchPage.html', results=results))
 
-@app.route('/<id>/')
-def animePage(id):
-    anime = requests.get(f'https://api.jikan.moe/v4/anime/{id}/full')
+@app.route('/<animeid>/')
+def animePage(animeid):
+    anime = requests.get(f'https://api.jikan.moe/v4/anime/{animeid}/full')
     # print(anime.json())
     try: 
         if anime.json()['status'] == 404:

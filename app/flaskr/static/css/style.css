@@ -77,6 +77,17 @@ html, body, *{
     border-radius: 1%;
     transition: all 0.3s;
   }
+  .card1 {
+    color: black;
+    height: 55%;
+    width: 23%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    border-radius: 1%;
+    transition: all 0.3s;
+  }
   .flex-container{
     display: flex;
     justify-content: space-evenly; /* allocateas extra space inbetween or around our elements */ 
