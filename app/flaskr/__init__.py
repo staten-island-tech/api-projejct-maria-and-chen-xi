@@ -26,8 +26,7 @@ app = Flask(__name__)
 @app.route('/')
 def home():
     top = requests.get('https://api.jikan.moe/v4/top/anime')
-    genres = requests.get('https://api.jikan.moe/v4/genres/anime')
-    return render_template('index.html', top=top, genres=genres)
+    return render_template('index.html', top=top)
 
 @app.route('/twst')
 def test():
