@@ -1,0 +1,8 @@
+<!-- {% for thing in results.json()['data'] %}
+{{thing}}
+<br>
+{% endfor %} -->
+
+<form action="{{ url_for('home')}}" method="post">
+    <label for="anime">Search:</label>
+    <input type="text" id="anime" name="anime" placeholder="find anime">

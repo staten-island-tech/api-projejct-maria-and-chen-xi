@@ -8,11 +8,7 @@
         <input type="search" id="query" name="q" placeholder="Search...">
        <button>Search</button>
     </form>
-    <h2> Genres: 
-    {% for thing in genres.json()['data'] %}
-    {{thing['name']}},
-    {% endfor %}
-    </h2>
+
       <h1>Top Anime: Hall of fame</h1>
       <div class="flex-container">
         
@@ -22,5 +18,17 @@
          <img src="{{thing['images']['jpg']['image_url']}}">  
         {% endfor %}   
         </div>
-
+      </div>
   {% endblock %}
+      
+  
+     
+   
+  
+  
+
+
+  
+</div>
+
+
