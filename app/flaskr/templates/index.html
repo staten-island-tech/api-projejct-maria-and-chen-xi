@@ -12,7 +12,6 @@
 
       <h1>Top Anime: Hall of fame</h1>
       <div class="flex-container">
-        
         {% for thing in top.json()['data']%}
           <div class ="card">
             <p><A href='/{{thing["mal_id"]}}'>{{thing['title_english']}}</A></p> 
