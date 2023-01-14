@@ -34,7 +34,7 @@ html, body, *{
     align-items: center;
     justify-content: space-between;
     background-color: #C0C0CC;
-    color: black
+    color: #333340;
   }
   .image {
     border: 20px;
@@ -67,7 +67,7 @@ html, body, *{
   }
 
   .card {
-    color: black;
+    color: #333340;
     height: 45%;
     width: 23%;
     display: flex;
@@ -78,7 +78,7 @@ html, body, *{
     transition: all 0.3s;
   }
   .card1 {
-    color: black;
+    color: #333340;
     height: 55%;
     width: 23%;
     display: flex;
