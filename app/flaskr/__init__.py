@@ -1,14 +1,24 @@
 import requests
 
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 app = Flask(__name__)
 
 
-@app.route('/')
+@app.route('/', methods =["GET", "POST"])
 def home():
-    top = requests.get('https://api.jikan.moe/v4/top/anime')
-    genres = requests.get('https://api.jikan.moe/v4/genres/anime')
-    return render_template('index.html', top=top, genres=genres)
+    if request.method == "POST":
+        requesting = request.form.get("anime")
+        results = requests.get(f'https://api.jikan.moe/v4/anime?q={requesting}&sfw')
+        print(results.json()['pagination']['items']['count'])
+        if results.json()['pagination']['items']['count'] == 0:
+            return(render_template('noResults.html'))
+        else:
+            return render_template('searchPage.html', results=results)
+    top = requests.get('https://api.jikan.moe/v4/top/anime/')
+    return(render_template('index.html', top=top))
+    # top = requests.get('https://api.jikan.moe/v4/top/anime')
+    # genres = requests.get('https://api.jikan.moe/v4/genres/anime')
+    # return render_template('index.html', top=top, genres=genres)
 
 @app.route('/search:<search>/')
 def search(search):
