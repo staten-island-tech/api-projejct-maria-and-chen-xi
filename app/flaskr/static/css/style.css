@@ -7,14 +7,11 @@ html, body, *{
 
 } 
 .background{
-    background-color: #3b4267;
-    height: 100%;
-    color: #333340;
+  background-color:  #3b4267;
 }
 
 /* Navbar container */
 .navbar {
-  overflow: hidden;
   background-color:#C0C0CC;
   font-family: Arial;
   border: 2%;
@@ -37,15 +34,13 @@ html, body, *{
     align-items: center;
     justify-content: space-between;
     background-color: #C0C0CC;
-    color: black
+    color: #333340;
   }
   .image {
     border: 20px;
     margin:20px;
   }
-  .mb-3 {
-    color: white;
-  }
+
   p.ex1 { 
     font-size: 80px;
   }
@@ -60,19 +55,44 @@ html, body, *{
     justify-content: space-between;
   }
 
+  .imagememe {
+    height: 33.3%;
+    width: 33.3%;
+  }
+
   .font-size{
-    font-size:30px;
+    font-size:25px;
     border: 5%;
     margin: 5%;
   }
 
   .card {
+    color: #333340;
+    height: 45%;
+    width: 23%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
-    border-radius: 3%;
+    border-radius: 1%;
     transition: all 0.3s;
   }
-
-  
+  .card1 {
+    color: #333340;
+    height: 55%;
+    width: 23%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    border-radius: 1%;
+    transition: all 0.3s;
+  }
+  .flex-container{
+    display: flex;
+    justify-content: space-evenly; /* allocateas extra space inbetween or around our elements */ 
+    flex-wrap: wrap; /* wraps next card to new line when space is gone */
+    align-items: center;
+    width: 95vw;
+    margin: 2% auto;
+  }

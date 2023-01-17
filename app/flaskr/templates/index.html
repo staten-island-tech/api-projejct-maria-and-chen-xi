@@ -1,24 +1,19 @@
 
 {% extends 'base.html' %}
 {% block content %}
-   
-          
-    
-     <form id="form"> 
-        <input type="search" id="query" name="q" placeholder="Search...">
-       <button>Search</button>
-    </form>
 
       <h1>Top Anime: Hall of fame</h1>
       <div class="flex-container">
-        
         {% for thing in top.json()['data']%}
-        <div class ="card"></div>
-        <p><A href='/{{thing["mal_id"]}}'>{{thing['title_english']}}</A></p> 
-         <img src="{{thing['images']['jpg']['image_url']}}">  
+          <div class ="card">
+            <p><A href='/{{thing["mal_id"]}}'>{{thing['title_english']}}</A></p> 
+            <img src="{{thing['images']['jpg']['image_url']}}">  
+            <h2>Rank: {{thing['rank']}}</h2>
+          </div>
         {% endfor %}   
-        </div>
-      </div>
+        <img class = "imagememe" src="../static/img/moth.png">
+        <img class = "imagememe" src="../static/img/meme.png">
+      </div> 
   {% endblock %}
       
   

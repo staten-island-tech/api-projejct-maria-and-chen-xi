@@ -1,8 +1,14 @@
-<!-- {% for thing in results.json()['data'] %}
-{{thing}}
-<br>
-{% endfor %} -->
+{% extends 'base.html' %}
+{% block content %}
+<div></div>
+<div class="flex-container">
+{% for thing in results.json()['data']%}
+          <div class ="card card1">
+            <p><A href='/{{thing["mal_id"]}}'>English: {{thing['title_english']}} <br> Japanese: {{thing['title_japanese']}}</A></p> 
+            <img src="{{thing['images']['jpg']['image_url']}}">  
+            <h2>Rank: {{thing['rank']}}</h2>
+          </div>
+        {% endfor %}   
+    </div>
 
-<form action="{{ url_for('home')}}" method="post">
-    <label for="anime">Search:</label>
-    <input type="text" id="anime" name="anime" placeholder="find anime">
+{% endblock %}
