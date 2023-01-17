@@ -1,12 +1,12 @@
 
 {% extends 'base.html' %}
 {% block content %}
-   
-   
+
     <div id = "triangle-topleft">
-     <h2>{{variable.json()['data']['title_japanese']}}</h2> 
-      <img class = "image" src="{{variable.json()['data']['images']['jpg']['image_url']}}"> <!-- image for anime --></div>
- <br>
+     <h2 class="idk">{{variable.json()['data']['title_japanese']}}</h2> 
+      <img class = "image" src="{{variable.json()['data']['images']['jpg']['image_url']}}"> <!-- image for anime -->
+    
+    </div>
     <h2> Popularity:{{variable.json()['data']['popularity']}}; 
         <br>
         Score: {{variable.json()['data']['score']}};  
@@ -23,11 +23,13 @@
         Genres: 
         {% for thing in variable.json()['data']['genres']%}
         {{thing['name']}},
-        {% endfor %}  
+        {% endfor %} 
+     
     </h2>
+    
      <p>Summary: {{variable.json()['data']['synopsis']}}</p>
-    </div>
 
-</div>
+
+
 {% endblock %}
 <!-- <h2>{{variable.json()['data']}}</h2> -->

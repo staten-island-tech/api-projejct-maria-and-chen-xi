@@ -10,6 +10,10 @@ html, body, *{
   background-color:  #3b4267;
 }
 
+.idk {
+  background-color: #d6d4cd
+}
+
 /* Navbar container */
 .navbar {
   background-color:#C0C0CC;
@@ -19,14 +23,12 @@ html, body, *{
 }
 
 #triangle-topleft{
-    clip-path: polygon(0 0, 0 200%, 50% 0);
+    clip-path: polygon(0 0, 0 300%, 100% 0);
+    background-color:  #d6d4cd;
+  }
+  h2, h1, p{
     background-color: #C0C0CC;
   }
-  h2, h1, *{
-    background-color: #C0C0CC;
-  }
-
-
 
   .header{
     text-align: center;
@@ -95,4 +97,8 @@ html, body, *{
     align-items: center;
     width: 95vw;
     margin: 2% auto;
+    background-color:#C0C0CC;
   }
+form,label,input {
+    background-color:#C0C0CC;
+}
