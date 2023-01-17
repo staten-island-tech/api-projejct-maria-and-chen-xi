@@ -26,11 +26,20 @@
            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
            border: none;
            text-align: center;
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
            
         }
+        .menu-btn1 {
+          background-color: maroon;
+          color: white;
+          padding: 10px;
+          font-size: 20px;
+          font-weight: bolder;
+          min-width: 160px;
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          border: none;
+          text-align: center;
+          
+       }
         .dropdown-menu {
           padding: 0px;
            position: relative;
@@ -52,18 +61,16 @@
            text-decoration: none;
            font-size: 18px;
            font-weight: bold;
-           display: flex;
-           
         }
+
         .links-hidden{
            display: block;
         }
         .links{
            display: inline-block;
-           display: flex;
 
-   
         }
+
         .links-hidden:hover,.links:hover {
            background-color: #333340;
         }
@@ -73,6 +80,7 @@
         .dropdown-menu:hover .menu-btn {
            background-color: #3b4267;
         }
+
         </style>
           
          
@@ -82,15 +90,7 @@
         <img class = "imagelogo" src="../static/img/logo.png">
 
         <a class = "menu-btn links" href="/">Home</a>
-        <div class="font-size dropdown-menu">
-        <button class = "menu-btn">Season<</button>
-          <div class="menu-content">
-            <a class="font-size links-hidden" href="#">Summer</a>
-            <a class="font-size links-hidden" href="#">Fall</a>
-            <a class="font-size links-hidden" href="#">Spring</a>
-            <a class="font-size links-hidden" href="#">Winter</a>
-          </div>
-        </div>
+        <a class = "menu-btn1 links" href="/508">DO NOT CLICK</a>
           <div class="dropdown-menu">
           <button class = "menu-btn">Genre<</button>
           <div class="menu-content">
