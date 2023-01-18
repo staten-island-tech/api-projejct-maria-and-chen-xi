@@ -38,4 +38,3 @@ def animePage(animeid):
             return render_template('error.html', status=anime.json()['status'], message=anime.json()['message'])
     except KeyError:
         return(render_template('animePage.html', variable=anime))
-
