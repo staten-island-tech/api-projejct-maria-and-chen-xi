@@ -36,7 +36,7 @@ html, body, *{
     align-items: center;
     justify-content: space-between;
     background-color: #C0C0CC;
-    color: #333340;
+    color: black
   }
   .image {
     border: 20px;
