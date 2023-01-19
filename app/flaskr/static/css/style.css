@@ -20,7 +20,7 @@ html, body, *{
 
 #triangle-topleft{
     clip-path: polygon(0 0, 0 200%, 50% 0);
-    background-color: #C0C0CC;
+    background-color: white;
   }
   h2, h1, *{
     background-color: #C0C0CC;
