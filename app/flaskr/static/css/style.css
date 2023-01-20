@@ -1,97 +1,98 @@
 html, body, *{
-    box-sizing: border-box;
-    margin: 2;
-    padding: 0;
-    font-family: 'Bungee', cursive;
-    background-color:  #3b4267;
+  box-sizing: border-box;
+  margin: 2;
+  padding: 0;
+  font-family: 'Bungee', cursive;
+  background-color:  #3b4267;
 
 } 
 .background{
-  background-color:  #3b4267;
+background-color:  #3b4267;
 }
 
 /* Navbar container */
 .navbar {
-  background-color:#C0C0CC;
-  font-family: Arial;
-  border: 2%;
-  margin: 2%;
+background-color:#C0C0CC;
+font-family: Arial;
+border: 2%;
+margin: 2%;
 }
 
 #triangle-topleft{
-    clip-path: polygon(0 0, 0 200%, 50% 0);
-    background-color: white;
-  }
+  clip-path: polygon(0 0, 0 200%, 50% 0);
+  background-color: white;
+}
+h2, h1, *{
+  background-color: #C0C0CC;
+}
 
-  .header{
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #C0C0CC;
-    color: black
-  }
-  .image {
-    border: 20px;
-    margin:20px;
-  }
 
-  p.ex1 { 
-    font-size: 80px;
-  }
 
-  .imagelogo {
-    clip-path: circle(48% at 50% 50%);
-    height: 10%;
-    width:15%;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
+.header{
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #C0C0CC;
+  color: #333340;
+}
+.image {
+  border: 20px;
+  margin:20px;
+}
 
-  .imagememe {
-    height: 33.3%;
-    width: 33.3%;
-  }
+p.ex1 { 
+  font-size: 80px;
+}
 
-  .font-size{
-    font-size:25px;
-    border: 5%;
-    margin: 5%;
-  }
+.imagelogo {
+  clip-path: circle(48% at 50% 50%);
+  height: 10%;
+  width:15%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
-  .card {
-    color: #333340;
-    height: 45%;
-    width: 23%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: column;
-    border-radius: 1%;
-    transition: all 0.3s;
-  }
-  .card1 {
-    color: #333340;
-    height: 55%;
-    width: 23%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: column;
-    border-radius: 1%;
-    transition: all 0.3s;
-  }
-  .flex-container{
-    display: flex;
-    justify-content: space-evenly; /* allocateas extra space inbetween or around our elements */ 
-    flex-wrap: wrap; /* wraps next card to new line when space is gone */
-    align-items: center;
-    width: 95vw;
-    margin: 2% auto;
-    background-color:#C0C0CC;
-  }
-form,label,input {
-    background-color:#C0C0CC;
+.imagememe {
+  height: 33.3%;
+  width: 33.3%;
+}
+
+.font-size{
+  font-size:25px;
+  border: 5%;
+  margin: 5%;
+}
+
+.card {
+  color: #333340;
+  height: 45%;
+  width: 23%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  border-radius: 1%;
+  transition: all 0.3s;
+}
+.card1 {
+  color: #333340;
+  height: 55%;
+  width: 23%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  border-radius: 1%;
+  transition: all 0.3s;
+}
+.flex-container{
+  display: flex;
+  justify-content: space-evenly; /* allocateas extra space inbetween or around our elements */ 
+  flex-wrap: wrap; /* wraps next card to new line when space is gone */
+  align-items: center;
+  width: 95vw;
+  margin: 2% auto;
 }
