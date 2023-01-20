@@ -23,11 +23,8 @@ html, body, *{
 }
 
 #triangle-topleft{
-    clip-path: polygon(0 0, 0 300%, 100% 0);
-    background-color:  #d6d4cd;
-  }
-  h2, h1, p{
-    background-color: #C0C0CC;
+    clip-path: polygon(0 0, 0 200%, 50% 0);
+    background-color: white;
   }
 
   .header{
